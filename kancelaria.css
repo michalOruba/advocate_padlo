@@ -1,0 +1,244 @@
+html,
+body {
+	height: 100%; /*Fixes the height to 100% of the viewport*/
+}
+body {
+	padding-top: 55px; /*50px for the height of the navbar + 37px for the offset*/
+	padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+	font-family: 'Literata', serif;
+}
+img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: white;
+	font-weight: 400;
+}
+
+i {
+	color: #000000;
+	font-size: 2rem;
+}
+
+h3 {
+	font-weight: 800;
+}
+
+p {
+	color: rgba(0, 0, 0, .8);
+}
+
+li {
+	color: rgba(0, 0, 0, .8);
+}
+
+#main {
+	background-color: #893a0f;
+}
+
+#jumbo {
+	height: 400px;
+	background-image: url("imgs/library_new.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+#map {
+	height: 100%; /* The height is 400 pixels */
+	width: 100%; /* The width is the width of the web page */
+	min-height: 400px;
+}
+
+#oferta {
+	padding-top: 70px;
+}
+
+#oferta-tabs {
+	min-height: 200px;
+}
+
+#kontakt {
+	padding-top: 70px;
+}
+
+.rowheight {
+	height: auto;
+}
+
+.oferta-row-height {
+	min-height: 400px;
+}
+
+.oferta-button {
+	height: 75px;
+}
+
+.oferta-p {
+	height: 100%;
+}
+/* ffefff */
+/* .bg-tr-color {
+	background: linear-gradient(13deg, #ffefff, #ffffff 70%);
+}
+
+.bg-br-color {
+	background: linear-gradient(167deg, #ffefff, #ffffff 70%);
+}
+
+.bg-tl-color {
+	background: linear-gradient(-13deg, #ffefff, #ffffff 70%);
+}
+
+.bg-bl-color {
+	background: linear-gradient(-167deg, #ffefff, #ffffff 70%);
+} */
+.bg-tr-color {
+	background: #ffefff;
+}
+
+.bg-br-color {
+	background: #ffefff;
+}
+
+.bg-tl-color {
+	background: #ffefff;
+}
+
+.bg-bl-color {
+	background: #ffefff;
+}
+
+/* .bg-tr-color {
+	background: linear-gradient(13deg, #f8bcff, #ffffff 70%);
+}
+
+.bg-br-color {
+	background: linear-gradient(167deg, #f8bcff, #ffffff 70%);
+}
+
+.bg-tl-color {
+	background: linear-gradient(-13deg, #f8bcff, #ffffff 70%);
+}
+
+.bg-bl-color {
+	background: linear-gradient(-167deg, #f8bcff, #ffffff 70%);
+} */
+
+.scrolled {
+	background: rgb(222, 192, 222);
+	transition: background 500ms;
+}
+
+.navbar-offset {
+	top: 37px; /*Offsets the top navbar 37px from the top of the viewport*/
+}
+
+/* .content {
+	margin-top: 100px;
+	margin-bottom: 100px;
+} */
+
+.list-group-item.active {
+	color: #ffefff;
+	background-color: #893a0f;
+	border-color: #893a0f;
+	font-weight: 600;
+}
+
+.list-group-item {
+	background-color: #893a0f;
+	color: rgba(255, 255, 255, .5);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: #ffefff;
+	background-color: #893a0f;
+	border-color: #893a0f;
+	font-weight: 600;
+}
+
+.list-group-item:hover {
+	background-color: #893a0f;
+	color: rgba(255, 255, 255, .8);
+}
+
+.list-group-item.active:hover {
+	background-color: #893a0f;
+}
+
+.image {
+	visibility: hidden;
+}
+.fadeIn {
+	-webkit-animation: animat_show 1s;
+	animation: animat_show 0.8s;
+	visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.list-group-item-action {
+	text-align: center;
+}
+
+.tab-pane.active {
+	animation: animat_show 1s ease-out;
+}
+
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.p-margin {
+	text-indent: 5%;
+}
+
+.honorarium-margin {
+	text-indent: 2%;
+}
+
+.lead {
+	color: #ffffff;
+	border-left: solid 2px #ffffff;
+}
+
+.blockquote {
+	width: 72%;
+}
+
+.blockquote-footer {
+	color: rgba(255, 255, 255, .8);
+}
+
+.ul-style-none {
+	list-style: none; /* Remove default bullets */
+}
+
+ul.ul-style-none li::before {
+	content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #893a0f; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
